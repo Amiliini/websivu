@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script>function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }</script>
+</head>
+
+<body class="content">
+  <div>
+    <h1>The <span id="best">best</span> of the week</h1>
+
+    <p>These are the winners of the weekly competition</p>
+    <br>
+
+
+    <div id="chatbox">
+      <button class=" open-button" onclick="openForm()">Chat</button>
+      <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h4>Chat</h4>
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Remember, be kind..." name="msg" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Here we're inserting a table -->
+
+    <table id="kuvataulukko" border="0">
+      <tr>
+        <td><img src="20200625_191707_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+        <td align="center">Paris daisy</td>
+      </tr>
+      <tr>
+        <td align="center">Butterfly</td>
+        <td><img src="20200711_153815_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+      </tr>
+      <tr>
+        <td><img src="20200725_125436_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+        <td align="center">Blueberry</td>
+      </tr>
+      <tr>
+        <td align="center">Sourdoughbread</td>
+        <td><img src="20200831_132720_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+      </tr>
+      <tr>
+        <td><img src="20200715_195504_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+        <td align="center">Flowers</td>
+      </tr>
+      <tr>
+        <td align="center">Doodling</td>
+        <td><img src="20200831_195313_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+      </tr>
+      <tr>
+        <td><img src="20200815_124942_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+        <td align="center">Oak</td>
+      </tr>
+      <tr>
+        <td align="center">Rhodanthe</td>
+        <td><img src="20200902_193112_resized.jpg" class="tblimg" alt="[247/365] Flower Power"></td>
+      </tr>
+    </table>
+
+
+
+    <br>
+    credits: Mari S
+    <br>
+    <br>
+    <hr>
+
+  </div>
+</body>
+
+</html>
